@@ -1,4 +1,6 @@
+from tensorflow.keras.layers import Layer
 class SubpixelConv2d(Layer):
+# class SubpixelConv2d():
     """It is a 2D sub-pixel up-sampling layer, usually be used
     for Super-Resolution applications, see `SRGAN <https://github.com/tensorlayer/srgan/>`__ for example.
 
