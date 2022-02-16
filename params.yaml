@@ -1,0 +1,14 @@
+base:
+  project: Super_Resolution
+
+data_path:
+  train: data\train\HR
+  test: data\validation\HR
+
+data_load:
+  batch_size: 2
+  buffer_size: 800
+  HR_img_width: 384
+  HR_img_height: 384
+  LR_img_width: 96
+  LR_img_height: 96
