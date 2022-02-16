@@ -1,0 +1,26 @@
+schema: '2.0'
+stages:
+  get_data:
+    cmd: python src/get_data.py --config=params.yaml
+    deps:
+    - path: data\train\HR
+      md5: ac4bcec1f0b22605f1bbb93aba8cd122.dir
+      size: 3533759878
+      nfiles: 801
+    - path: data\validation\HR
+      md5: 51f48654a35ffb09383e996458ac1cc3.dir
+      size: 449507452
+      nfiles: 101
+    - path: data\validation\LR
+      md5: f9a86b6b4a2861f0cfa1f33fd4acca28.dir
+      size: 8412702
+      nfiles: 101
+    - path: src\get_data.py
+      md5: 9e375b7ba957993ae45bd7228a44d56c
+      size: 2698
+    - path: src\read_params.py
+      md5: 1c5b42d1a173280f3d5b14c1dc42dac6
+      size: 488
+    - path: src\utils\preprocessing.py
+      md5: e4ea8cf6a555f1d0fbcff6d93fdc939c
+      size: 1289
