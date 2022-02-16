@@ -49,19 +49,3 @@ def random_jitter(image):
     if tf.random.uniform(()) > 0.5:
         image = tf.image.flip_left_right(image)
     return image
-
-
-def load_image_train(image_file):
-    image = load(image)
-    HR_image = random_jitter(image)
-    LR_image = resize(HR_image, LR_image_height, LR_image_width)
-    HR_image = normalize(HR_image)
-    LR_image = normalize(LR_image)
-    return LR_image, HR_image
-
-
-def load_image_test(image_file):
-    image = load(image)
-    image = resize(image, HR_img_height, HR_img_width)
-    image = normalize(image)
-    return image
