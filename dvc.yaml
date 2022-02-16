@@ -1,0 +1,10 @@
+stages:
+  get_data:
+    cmd: python src/get_data.py --config=params.yaml
+    deps:
+      - src\read_params.py
+      - src\get_data.py
+      - src\utils\preprocessing.py
+      - data\train\HR
+      - data\validation\HR
+      - data\validation\LR
