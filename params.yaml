@@ -3,7 +3,8 @@ base:
 
 data_path:
   train: data\train\HR
-  test: data\validation\HR
+  test_HR: data\validation\HR
+  test_LR: data\validation\LR
 
 data_load:
   batch_size: 2
