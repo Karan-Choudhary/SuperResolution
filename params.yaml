@@ -13,3 +13,5 @@ data_load:
   HR_img_height: 384
   LR_img_width: 96
   LR_img_height: 96
+
+generated_image_output_path: Results
