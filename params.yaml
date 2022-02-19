@@ -23,6 +23,7 @@ model:
   upsampling_factor: 2
   strides: 1
   padding: same
+  saved_path: saved_models
 
 loss:
   lambda: 1e-3.as_float32
