@@ -26,6 +26,6 @@ model:
   saved_path: saved_models
 
 loss:
-  lambda: 1e-3.as_float32
+  lambda: 0.001
 
 generated_image_output_path: Results
