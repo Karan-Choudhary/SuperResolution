@@ -1,6 +1,6 @@
 stages:
   get_data:
-    cmd: python src/get_data.py --config=params.yaml
+    cmd: python src\get_data.py --config=params.yaml
     deps:
       - src\read_params.py
       - src\get_data.py
@@ -8,3 +8,37 @@ stages:
       - data\train\HR
       - data\validation\HR
       - data\validation\LR
+  
+  train_model:
+    cmd: python src\train_model.py --config=params.yaml
+    deps:
+      - src\get_data.py
+      - src\train_model.py
+      - src\model\losses\loss.py
+      - src\model\Subpixel\Subpixel_conv2D.py
+      - src\model\build.py
+      - src\model\models.py
+    params:
+    - data_load.batch_size
+    - data_load.buffer_size
+    - data_load.HR_img_width
+    - data_load.HR_img_height
+    - data_load.LR_img_width
+    - data_load.LR_img_height
+    - model.num_res_blocks
+    - model.num_filters
+    - model.kernel_size
+    - model.num_channels
+    - model.upsampling_factor
+    - model.strides
+    - model.padding
+    - training.epochs
+    - loss.lambda
+    metrics:
+    - report\params.json:
+        cache: false
+    - report\logs.json:
+        cache: false
+    outs:
+    - saved_models\Generator.h5
+    - saved_models\Discriminator.h5
