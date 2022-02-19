@@ -25,7 +25,14 @@ model:
   padding: same
   saved_path: saved_models
 
+training:
+  epochs: 100
+
 loss:
   lambda: 0.001
+
+reports:
+  params: report\params.json
+  logs: report\logs.json
 
 generated_image_output_path: Results
