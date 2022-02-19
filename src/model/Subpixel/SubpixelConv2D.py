@@ -44,7 +44,7 @@ class SubpixelConv2d(Layer):
     - `Real-Time Single Image and Video Super-Resolution Using an Efficient Sub-Pixel Convolutional Neural Network <https://arxiv.org/pdf/1609.05158.pdf>`__
 
     """
-
+    # Code borrowed from: https://tensorlayer.readthedocs.io/en/latest/_modules/tensorlayer/layers/convolution/super_resolution.html
     # github/Tetrachrome/subpixel  https://github.com/Tetrachrome/subpixel/blob/master/subpixel.py
     def __init__(
         self,

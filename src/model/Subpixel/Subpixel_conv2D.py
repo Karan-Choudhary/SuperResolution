@@ -20,6 +20,7 @@ class SubpixelConv2D(Layer):
         Real-Time Single Image and Video Super-Resolution Using an Efficient
         Sub-Pixel Convolutional Neural Network Shi et Al. https://arxiv.org/abs/1609.05158
     """
+    # Code borrowed from: https://github.com/fengwang/subpixel_conv2d
 
     def __init__(self, upsampling_factor=4, **kwargs):
         super(SubpixelConv2D, self).__init__(**kwargs)
