@@ -28,6 +28,9 @@ model:
 training:
   epochs: 100
 
+test:
+  num_samples: 10
+
 loss:
   lambda: 0.001
 
