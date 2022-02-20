@@ -42,3 +42,14 @@ stages:
     outs:
     - saved_models\Generator.h5
     - saved_models\Discriminator.h5
+  
+  evaluate_model:
+    cmd: python src\evaluate_model.py --config=params.yaml
+    deps:
+    - src\display\showOutput.py
+    - src\evaluate.py
+    - saved_models\Generator.h5
+    params:
+    - test.num_samples
+    outs:
+    - Results
