@@ -5,7 +5,7 @@
 * Model is only trained for 35 epochs on Google Colab
 * You can train it according to your need by changing parameters in [params.yaml](https://github.com/Karan-Choudhary/SuperResolution/blob/main/params.yaml) file
 * Model Architecture:
-
+![model](https://user-images.githubusercontent.com/54716931/154962938-59e6f2e3-93e7-4c4c-960a-c740e4b0d8e6.jpeg)
 
 ### Requirements
 * [Create a new virtual environment](https://docs.python.org/3/library/venv.html).
