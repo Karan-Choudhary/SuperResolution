@@ -46,6 +46,11 @@ dvc repro
 * Trained models will be saved in ***saved_models*** directory.
 * Results will be saved in ***Results\present_datatime*** directory with name **present_time_result.png**.
 
+### Todo:
+* Integrate [mlflow](https://mlflow.org/) for better tracking
+* Create webapp
+* Deployment
+
 ### References:
 * Reference of [Subpixel_conv2D](https://github.com/fengwang/subpixel_conv2d/blob/master/subpixel_conv2d.py) layer and [SubpixelConv2D](https://tensorlayer.readthedocs.io/en/latest/_modules/tensorlayer/layers/convolution/super_resolution.html)
 * Reference of [loss functions](https://github.com/eriklindernoren/Keras-GAN/tree/master/srgan)
