@@ -17,7 +17,7 @@ pip install -r requirements.txt
 ```
 
 ### Usage:
-* Change parameters and directories according to your system (recommendation - do not change) in [params.yaml](https://github.com/Karan-Choudhary/Sketchs_to_ColorImages/blob/main/params.yaml).
+* Change parameters and directories according to your system (recommendation - do not change) in [params.yaml](https://github.com/Karan-Choudhary/SuperResolution/blob/main/params.yaml).
 * Setup the Directory named ***Results*** in the root directory.
 * Make sure you have DVC initialized in the root directory</br>
 You can do it with the command:
@@ -45,5 +45,10 @@ dvc repro
 ```
 * Trained models will be saved in ***saved_models*** directory.
 * Results will be saved in ***Results\present_datatime*** directory with name **present_time_result.png**.
+
+### References:
+* Reference of [Subpixel_conv2D](https://github.com/fengwang/subpixel_conv2d/blob/master/subpixel_conv2d.py) layer and [SubpixelConv2D](https://tensorlayer.readthedocs.io/en/latest/_modules/tensorlayer/layers/convolution/super_resolution.html)
+* Reference of [loss functions](https://github.com/eriklindernoren/Keras-GAN/tree/master/srgan)
+* [Blog](https://blog.paperspace.com/super-resolution-generative-adversarial-networks/)
  
 Warning: Do not try to change **dvc.lock file** and ***.dvc directory***
